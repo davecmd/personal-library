@@ -95,8 +95,18 @@ function removeSelected() {
     }
 }
 
+function exitForm() {
+    const bookForm = document.querySelector('form');
+    bookForm.style.display = "none";
+    const addNewButton = document.querySelector('#add-book');
+    addNewButton.style.display = "inline-block";
+}
+
 const addNewButton = document.querySelector('#add-book');
 addNewButton.addEventListener('click', displayBookForm);
+
+const exitButton = document.querySelector('#exit-button');
+exitButton.addEventListener('click', exitForm);
 
 const submitNewButton = document.querySelector('#submit-new-book');
 submitNewButton.addEventListener('click', createNewBookForm);
