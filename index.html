@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+   <head>
+ <meta charset="utf-8">
+       <title>Personal Library</title>
+       <link href="reset.css" rel="stylesheet" type="text/css">
+       <link href="styles.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+       <h1>David's Library</h1>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th>Select</th>
+                </tr>
+                <tr>
+                    <td>A Mind for Numbers</td>
+                    <td>Barbara Oakley</td>
+                    <td>269</td>
+                    <td>Read</td>
+                    <td><input type="checkbox" name="selector"></td>
+                </tr>
+            </table>
+
+            <form class="newBookForm"> 
+                <label for="title"><h2>Enter Title:</h2></label>
+                <input type="text" placeholder="Title" name="title" id="title" required>
+                <label for="author"><h2>Enter Author:</h2></label>
+                <input type="text" placeholder="Author" name="author" id="author" required>
+                <label for="pages"><h2>Enter # of Pages:</h2></label>
+                <input type="text" placeholder="#" name="pages" id="pages" required>
+                <label>
+                    <h2>Have You Read This Book?</h2>
+                    <input type="radio" name="read-book" value="read" class="radio-button" required> Read
+                    <input type="radio" name="read-book" value="not-read" class="radio-button"> Not Read
+                </label>
+                <button type="button" id="submit-new-book">Submit</button>
+                <button type="button" id="reset-new-book">Reset</button>
+            </form>
+
+            <button type="button" id="add-book">Add a New Book</button>
+            <button type="button" id="remove-book">Remove Selected Book(s)</button>
+       <script type="text/javascript" src="scripts.js"></script>
+   </body>
+</html>
